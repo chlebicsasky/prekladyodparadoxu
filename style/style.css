@@ -26,10 +26,50 @@ body{
     margin: 0;
 }
 
+main{
+    padding: 16px;
+    height: 750px;
+    text-align: center;
+}
+
+.síkryt{
+    color: rgb(236, 236, 236);
+    text-align: end;
+}
+
 #Homevec{
     padding: 2px;
 }
 
 #Loginvec{
     padding: 2px;
+}
+
+footer{
+    padding: 16px;
+    background-color: rgb(236, 89, 84);
+}
+
+.odkazy{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dalsi-odkazy a{
+    text-decoration: none;
+    color: black;
+}
+
+.dalsi-odkazy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.texticek{
+    color: black;
+    display: flex;
+    justify-content: center;
 }
