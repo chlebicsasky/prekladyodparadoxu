@@ -28,12 +28,14 @@ body{
 
 main{
     padding: 16px;
-    height: 750px;
+    height: 710px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
 .síkryt{
-    color: rgb(236, 236, 236);
+    color: rgb(243, 243, 243);
     text-align: end;
 }
 
@@ -48,6 +50,7 @@ main{
 footer{
     padding: 16px;
     background-color: rgb(236, 89, 84);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .odkazy{
