@@ -28,14 +28,14 @@ body{
 
 main{
     padding: 16px;
-    height: 670px;
+    height: 690px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
 }
 
 .síkryt{
-    color: rgb(243, 243, 243);
+    color: rgb(230, 230, 230);
     text-align: end;
 }
 
@@ -75,10 +75,21 @@ footer{
     color: white;
     display: flex;
     justify-content: center;
+    font-size: larger;
 }
 
 .carecka{
     color: white;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid white;
+    width: 1000px;
+    margin: auto;
+}
+
+.informacionen{
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
 }
