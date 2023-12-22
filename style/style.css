@@ -2,14 +2,20 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: rgba(255, 208, 0, 0.795);
+    background-color: rgb(136, 102, 0);
     padding: 15px;
+}
+
+#oprasek{
+    height: 50px;
+    line-height: 50px;
 }
 
 header a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .vec1{
@@ -23,12 +29,17 @@ header img{
 }
 
 body{
-    margin: 0;
+    background-image: url(/opraski/backgroundy/background_preklady.png);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 main{
+    background-color: #e9e9e9;
     padding: 16px;
-    height: 690px;
+    height: auto;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
@@ -49,7 +60,7 @@ main{
 
 footer{
     padding: 16px;
-    background-color: rgb(22, 27, 104);
+    background-color: rgb(41, 41, 41);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -87,9 +98,103 @@ footer{
     margin: auto;
 }
 
-.informacionen{
+.andelicek{
     color: white;
-    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.chlebnik{
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.freskotik{
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.kontakty-text{
+    color: white;
+    
+    text-align: center;
+}
+
+/*##################################################*/
+
+.cudlici{
+    padding: 16px;
+    gap: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+/**/
+
+/**/
+
+#ck3 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: rgb(42, 95, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#ck3 img{
+    border-bottom: 10px solid black;
+}
+
+#v3 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: rgb(197, 36, 36);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#v3 img{
+    border-bottom: 10px solid black;
+}
+
+#hoi4 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: rgb(124, 50, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#hoi4 img{
+    border-bottom: 10px solid black;
+}
+
+#eu4 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: rgb(99, 42, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#eu4 img{
+    border-bottom: 10px solid black;
 }

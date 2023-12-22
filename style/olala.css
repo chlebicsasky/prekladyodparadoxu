@@ -1,0 +1,202 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(136, 102, 0);
+    padding: 15px;
+}
+
+#vecickyy{
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#objazek{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#objazek img{
+    padding: 1px;
+    border: 10px solid black;
+}
+
+#vecickyy a{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 4, 255);
+    
+}
+
+#oprasek{
+    height: 50px;
+    line-height: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.vec1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img{
+    margin: 0;
+}
+
+body{
+    background-image: url(/opraski/backgroundy/background_preklady.png);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main{
+    background-color: #e9e9e9;
+    padding: 16px;
+    height: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.síkryt{
+    color: rgb(230, 230, 230);
+    text-align: end;
+}
+
+#Homevec{
+    padding: 2px;
+}
+
+#Loginvec{
+    padding: 2px;
+}
+
+footer{
+    padding: 16px;
+    background-color: rgb(41, 41, 41);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.odkazy{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dalsi-odkazy a{
+    text-decoration: none;
+    color: white;
+}
+
+.dalsi-odkazy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.texticek{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.carecka{
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    width: 1000px;
+    margin: auto;
+}
+
+.andelicek{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.chlebnik{
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.freskotik{
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.kontakty-text{
+    color: white;
+    
+    text-align: center;
+}
+
+/*##################################################*/
+
+.cudlici{
+    padding: 16px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**/
+
+/**/
+
+#ck3 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-style: bold;
+}
+
+#v3 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: brown;
+}
+
+#hoi4 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: brown;
+}
+
+#eu4 {
+    padding: 0px;
+    border: 10px solid black;
+    background-color: brown;
+}
