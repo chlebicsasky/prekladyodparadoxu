@@ -7,27 +7,110 @@ header{
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    
+    box-shadow: rgba(92, 75, 0, 0.7) 0px 4px 12px;
+    position: relative;
+    background-color: rgb(136, 102, 0);
 }
 
-#oprasek{
-    height: 60px;
-    line-height: 60px;
-}
 
-header a{
-    text-decoration: none;
-    color: white;
-    text-align: end;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px;
-    border: 2px solid white;
-}
 
-.vec1{
+
+header .wrapper {
+    max-width: 1300px;
+    width: 1300px;
+    margin: auto;
     display: flex;
     align-items: center;
-    gap: 20px;
-}
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: #fff;
+    z-index: 10;
+    position: relative;
+    background-color: rgb(136, 102, 0);
+  }
+  header .wrapper-logo {
+    height: 50px;
+    line-height: 50px;
+  }
+  header .wrapper-logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header .wrapper-hamburger {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: transform ease 1s;
+  }
+  header .wrapper-hamburger span {
+    transition: transform ease 1s;
+    transition: ease 1s;
+    border: 2px solid #000;
+  }
+  @media only screen and (min-width: 768px) {
+    header .wrapper-hamburger {
+      display: none;
+    }
+  }
+  header .wrapper .is-active {
+    transform: rotate(360deg);
+  }
+  header .wrapper .is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 13px);
+  }
+  header .wrapper .is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .wrapper .is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -13px);
+  }
+  header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-350px);
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    transition: transform ease 1s;
+    background-color: #bd8a00;
+  }
+  header nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: ease 0.3s;
+  }
+  @media only screen and (min-width: 768px) {
+    header nav {
+      z-index: 10;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-right: 60px;
+      transform: translate(-50%, 0%);
+      max-width: 1300px;
+      background: none;
+      box-shadow: none;
+    }
+    header nav a:hover {
+      color: rgb(0, 0, 0);
+    }
+  }
+  header .is-open {
+    transform: translateX(-50%) translateY(55px);
+  }
 
 header img{
     margin: 0;
@@ -39,6 +122,14 @@ body{
     margin-right: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 main{
@@ -89,6 +180,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: larger;
+    text-align: center;
 }
 
 .carecka{
@@ -100,37 +192,17 @@ footer{
     margin: auto;
 }
 
-.andelicek{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: 3px solid white;
-    border-radius: 10px;
-    margin: 50px;
-}
-
-.chlebnik{
+.tvurce{
     color: white;
     text-align: center;
     border: 3px solid white;
     border-radius: 10px;
     margin: 50px;
 }
-
-.freskotik{
-    color: white;
-    text-align: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    margin: 50px;
-}
-
-.Ay{
-    color: white;
-    text-align: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    margin: 50px;
+@media only screen and (max-width: 768px) {
+    .tvurce {
+        margin: 10px
+    }
 }
 
 footer a{
@@ -150,7 +222,6 @@ footer h3{
 
 .kontakty-text{
     color: white;
-    
     text-align: center;
 }
 
@@ -161,61 +232,92 @@ footer h3{
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /**/
 
 /**/
-
-#ck3 {
-    padding: 0px;
-    border: 10px solid black;
-    background-color: rgb(42, 95, 165);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-}
 
 #ck3 img{
-    border-bottom: 10px solid black;
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #ck3 img:hover {
+      border: 10px solid red;
+      
+    }
 }
 
-#v3 {
-    padding: 0px;
-    border: 10px solid black;
-    background-color: rgb(197, 36, 36);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-}
 
 #v3 img{
-    border-bottom: 10px solid black;
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #v3 img:hover {
+      border: 10px solid red;
+      
+    }
 }
 
-#hoi4 {
-    padding: 0px;
-    border: 10px solid black;
-    background-color: rgb(124, 50, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-}
 
 #hoi4 img{
-    border-bottom: 10px solid black;
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #hoi4 img:hover {
+      border: 10px solid red;
+      
+    }
 }
 
-#eu4 {
-    padding: 0px;
-    border: 10px solid black;
-    background-color: rgb(99, 42, 165);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-}
 
 #eu4 img{
-    border-bottom: 10px solid black;
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #eu4 img:hover {
+      border: 10px solid red;
+      
+    }
+}
+
+
+#v2 img{
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #v2 img:hover {
+      border: 10px solid red;
+      
+    }
+}
+
+
+#imprtr img{
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #imprtr img:hover {
+      border: 10px solid red;
+      
+    }
+}
+
+
+#ck2 img{
+    border: 5px solid black;
+    transition: ease 0.3s;
+}
+@media only screen and (min-width: 768px) {
+    #ck2 img:hover {
+      border: 10px solid red;
+      
+    }
 }
